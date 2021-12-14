@@ -7,7 +7,7 @@ interface JRunScriptInterface
     /**
      * @const string
      */
-    const KEY = 'runScripts';
+    const KEY = 'JRunScript';
 
     /**
      * @const string

@@ -7,7 +7,7 @@ interface JSweetAlertInterface
     /**
      * @cons string
      */
-    const KEY = 'sweetAlerts';
+    const KEY = 'JSweetAlert';
 
     /**
      * @cons string

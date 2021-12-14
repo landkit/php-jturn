@@ -7,7 +7,7 @@ interface JRedirectInterface
     /**
      * @cons string
      */
-    const KEY = 'redirect';
+    const KEY = 'JRedirect';
 
     /**
      * @cons string

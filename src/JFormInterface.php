@@ -7,7 +7,7 @@ interface JFormInterface
     /**
      * @const string
      */
-    const KEY = 'form';
+    const KEY = 'JForm';
 
     /**
      * @const string

@@ -7,7 +7,7 @@ interface JDomInterface
     /**
      * @const string
      */
-    const KEY = 'dom';
+    const KEY = 'JDom';
 
     /**
      * @const string

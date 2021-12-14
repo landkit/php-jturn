@@ -84,7 +84,7 @@ abstract class JTurn
      */
     public static function render()
     {
-        echo json_encode(['jturn' => self::$data], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        echo json_encode(['JTurn' => self::$data], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         exit;
     }
 }

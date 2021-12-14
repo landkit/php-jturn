@@ -7,7 +7,7 @@ interface JAlertInterface
     /**
      * @const string
      */
-    const KEY = 'alerts';
+    const KEY = 'JAlert';
 
     /**
      * @const string
