@@ -10,8 +10,8 @@ class JAlert implements JAlertInterface
      * @var array
      */
     private static $config = [
-        'content' => '',
-        'color' => '',
+        'message' => '',
+        'type' => '',
         'dismissible' => false,
         'session' => false
     ];
@@ -29,8 +29,8 @@ class JAlert implements JAlertInterface
     private static function resetConfig()
     {
         self::$config = [
-            'content' => '',
-            'color' => '',
+            'message' => '',
+            'type' => '',
             'dismissible' => false,
             'session' => false
         ];
@@ -55,14 +55,14 @@ class JAlert implements JAlertInterface
     }
 
     /**
-     * @param string $content
-     * @param string $color
+     * @param string $message
+     * @param string $type
      * @return JAlert
      */
-    private static function attach(string $content, string $color): JAlert
+    private static function attach(string $message, string $type): JAlert
     {
-        self::$config['content'] = JTurn::filter($content);
-        self::$config['color'] = $color;
+        self::$config['message'] = JTurn::filter($message);
+        self::$config['type'] = $type;
 
         foreach (JTurn::getSelectors() as $selector) {
             $session = self::$config['session'];
@@ -80,92 +80,92 @@ class JAlert implements JAlertInterface
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function black(string $content): JAlert
+    public static function black(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_BLACK);
+        return self::attach($message, self::TYPE_BLACK);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function danger(string $content): JAlert
+    public static function danger(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_DANGER);
+        return self::attach($message, self::TYPE_DANGER);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function dark(string $content): JAlert
+    public static function dark(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_DARK);
+        return self::attach($message, self::TYPE_DARK);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function info(string $content): JAlert
+    public static function info(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_INFO);
+        return self::attach($message, self::TYPE_INFO);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function light(string $content): JAlert
+    public static function light(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_LIGHT);
+        return self::attach($message, self::TYPE_LIGHT);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function primary(string $content): JAlert
+    public static function primary(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_PRIMARY);
+        return self::attach($message, self::TYPE_PRIMARY);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function secondary(string $content): JAlert
+    public static function secondary(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_SECONDARY);
+        return self::attach($message, self::TYPE_SECONDARY);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function success(string $content): JAlert
+    public static function success(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_SUCCESS);
+        return self::attach($message, self::TYPE_SUCCESS);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function warning(string $content): JAlert
+    public static function warning(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_WARNING);
+        return self::attach($message, self::TYPE_WARNING);
     }
 
     /**
-     * @param string $content
+     * @param string $message
      * @return JAlert
      */
-    public static function white(string $content): JAlert
+    public static function white(string $message): JAlert
     {
-        return self::attach($content, self::COLOR_WHITE);
+        return self::attach($message, self::TYPE_WHITE);
     }
 }

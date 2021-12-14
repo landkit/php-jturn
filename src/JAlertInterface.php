@@ -12,50 +12,50 @@ interface JAlertInterface
     /**
      * @const string
      */
-    const COLOR_BLACK = 'black';
+    const TYPE_BLACK = 'black';
 
     /**
      * @const string
      */
-    const COLOR_DANGER = 'danger';
+    const TYPE_DANGER = 'danger';
 
     /**
      * @const string
      */
-    const COLOR_DARK = 'dark';
+    const TYPE_DARK = 'dark';
 
     /**
      * @const string
      */
-    const COLOR_INFO = 'info';
+    const TYPE_INFO = 'info';
 
     /**
      * @const string
      */
-    const COLOR_LIGHT = 'light';
+    const TYPE_LIGHT = 'light';
 
     /**
      * @const string
      */
-    const COLOR_PRIMARY = 'primary';
+    const TYPE_PRIMARY = 'primary';
 
     /**
      * @const string
      */
-    const COLOR_SECONDARY = 'secondary';
+    const TYPE_SECONDARY = 'secondary';
 
     /**
      * @const string
      */
-    const COLOR_SUCCESS = 'success';
+    const TYPE_SUCCESS = 'success';
 
     /**
      * @const string
      */
-    const COLOR_WARNING = 'warning';
+    const TYPE_WARNING = 'warning';
 
     /**
      * @const string
      */
-    const COLOR_WHITE = 'white';
+    const TYPE_WHITE = 'white';
 }
