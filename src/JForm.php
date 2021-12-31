@@ -35,7 +35,7 @@ class JForm implements JFormInterface
      */
     public static function validField(string $message = ''): JForm
     {
-        return self::attachFieldValidation($message, self::VALIDATOR_INVALID);
+        return self::attachFieldValidation($message, self::VALIDATOR_VALID);
     }
 
     /**
@@ -44,7 +44,7 @@ class JForm implements JFormInterface
      */
     public static function invalidField(string $message = ''): JForm
     {
-        return self::attachFieldValidation($message, self::VALIDATOR_VALID);
+        return self::attachFieldValidation($message, self::VALIDATOR_INVALID);
     }
 
     /**
