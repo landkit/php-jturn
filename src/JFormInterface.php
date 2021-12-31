@@ -42,5 +42,10 @@ interface JFormInterface
     /**
      * @const string
      */
+    const BEHAVIOR_KEEP_DISABLED_FORM = 'keepFormDisabled';
+
+    /**
+     * @const string
+     */
     const BEHAVIOR_RESET_FORM = 'reset';
 }

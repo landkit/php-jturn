@@ -2,6 +2,9 @@
 
 namespace LandKit\JTurn;
 
+/**
+ *
+ */
 class JForm implements JFormInterface
 {
     use JTurnTrait;
@@ -86,6 +89,14 @@ class JForm implements JFormInterface
     public static function keepFieldsAndButtonDisabled(): JForm
     {
         return self::keepFieldsDisabled()::keepButtonDisabled();
+    }
+
+    /**
+     * @return JForm
+     */
+    public static function keepFormDisabled(): JForm
+    {
+        return self::attachBehavior(self::BEHAVIOR_KEEP_DISABLED_FORM);
     }
 
     /**
