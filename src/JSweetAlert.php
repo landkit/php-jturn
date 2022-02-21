@@ -94,6 +94,36 @@ class JSweetAlert implements JSweetAlertInterface
     }
 
     /**
+     * @param string $text
+     * @return JSweetAlert
+     */
+    public static function buttonConfirm(string $text): JSweetAlert
+    {
+        self::$config['confirmButtonText'] = $text;
+        return new self;
+    }
+
+    /**
+     * @param string $text
+     * @return JSweetAlert
+     */
+    public static function buttonDeny(string $text): JSweetAlert
+    {
+        self::$config['denyButtonText'] = $text;
+        return new self;
+    }
+
+    /**
+     * @param string $text
+     * @return JSweetAlert
+     */
+    public static function buttonCancel(string $text): JSweetAlert
+    {
+        self::$config['cancelButtonText'] = $text;
+        return new self;
+    }
+
+    /**
      * @return JSweetAlert
      */
     public static function session(): JSweetAlert
